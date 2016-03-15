@@ -6,7 +6,7 @@ selectball:$(obj)
 	gcc $^ -o $@
 
 clean:
-	rm selectball
+	rm selectball *.o *.diff output.txt
 
 test:
 	diff output.txt answer.txt
